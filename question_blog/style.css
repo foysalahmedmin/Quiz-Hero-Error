@@ -1,0 +1,17 @@
+/* blog */
+.accordion-item{
+    border: 2px solid #fff;
+}
+.accordion-item .accordion-Btn{
+    padding: .5rem .9rem;
+}
+.accordion-item .accordionBody p{
+    margin: .9rem ;
+}
+.accordion-item .accordionBody{
+    display: none;
+}
+.accordion-item .accordionBody.show{
+    display: block;
+}
+/* end */

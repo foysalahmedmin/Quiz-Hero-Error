@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Blog</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../image/FavIcon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+            <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+            <p class="text-[10px] font-normal capitalize -mt-1">
+                Get ready to Quiz and be amazed!
+            </p>
+            </div>
+            <a href="../index.html">
+                <button
+                class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+              >
+                Quiz
+              </button>
+              </a>
+        </nav>
+    </header>
+    <main>
+        <section class="ansQuestions">
+            <div class="container-blog w-9/12 mx-auto">
+                 <div class="title">
+                    <h1 class="text-center my-8 text-xl">Welcome to Quiz Hero</h1>
+                 </div>
+                 <div class="ansQusAccordion w-full">
+                    <div class="accordion-item">
+                        <div class="accordion-Btn bg-green-600">
+                            <h3 class="text-white">
+                                What is the difference between Map(), forEach(), filter() and find()?
+                            </h3>
+                        </div>
+                        <div class="accordionBody show">
+                            <p>
+                               <strong>=> </strong> Map(), forEach(), filter() and find() are all array methods; <br><br>
+                                <strong>Map: </strong> The map method works on each element of the array separately and returns the result in a different array. <br>
+                                <strong>forEach: </strong> The forEach method also works on each element of the array separately, But does't create any array. <br>
+                                <strong>filter: </strong> The forEach method also works on each element of the array separately, but its function is to create a new array with certain elements from the array according to the condition. <br>
+                                <strong>find: </strong>The find method is similar to the filter method, but the find method return only one element from the array conditionally.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-Btn bg-green-600">
+                            <h3 class="text-white">
+                                What is the difference between Local Storage, Session Storage and Cookies?
+                            </h3>
+                        </div>
+                        <div class="accordionBody">
+                            <p>
+                                <strong>Local Storage: </strong> Local storage is useful for storing data that the user will need to access later, such as offline data. And this data will not be removed unless manually removed. <br>
+                                <strong>Session Storage: </strong> Session storage stores data in the browser much like local storage, but this data is not permanent. That data is gone on reload or close. <br>
+                                <strong>Cookies: </strong> Cookies also stor data in browser, and there are 2 types of cookies third party cookies and http cookies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-Btn bg-green-600">
+                            <h3 class="text-white">
+                                What is Event Loop?
+                            </h3>
+                        </div>
+                        <div class="accordionBody">
+                            <p>
+                                The event loop is the secret behind JavaScript's asynchronous programming. <br> JS executes all operations on a single thread, but using a few smart data structures, it gives us the illusion of multi-threading. Let's take a look at what happens on the back-end. <br><br>
+                                
+                            The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-Btn bg-green-600">
+                            <h3 class="text-white">
+                                Explain "quizTimer()" function. 
+                            </h3>
+                        </div>
+                        <div class="accordionBody">
+                            <p>
+                                <> Shows the time from the start to the end of the quiz; <> <br>
+                                => This function is called after 3 seconds of clicking the start quiz button and starts the quiz timer. <br>
+                                => This function has a dismiss parameter. When the submit quiz button is clicked this function is called again with an argument of dismiss. And according to the condition this timer is stopped.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-Btn bg-green-600">
+                            <h3 class="text-white">
+                                Explain "chooseQuiz()" function;
+                            </h3>
+                        </div>
+                        <div class="accordionBody">
+                            <p>
+                                => This function indicates the number of questions which option has been selected from among the quiz questions. <br>
+                                => Then the question and the selected answer is stored in answers array.
+                            </p>
+                        </div>
+                    </div>
+                    
+                 </div>
+            </div>
+        </section>
+        <!-- end -->
+    </main>
+    <script src="./ansQuestions.js"></script>
+</body>
+</html>
